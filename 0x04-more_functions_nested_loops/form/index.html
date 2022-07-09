@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+<link rel="stylesheet" href="index.css">  
+ <title>Register</title>
+</head>
+<body>
+    
+    <fieldset class="fs">
+     <legend>Register Form:</legend>
+<form action="form_handler.php"  method="Get"  >
+    <div>
+        <div class="register">
+            <label>First Name</label>
+            <label class="ln">Last Name</label>
+        </div>
+        <div class="register">
+            <input type="text" placeholder="Enter first name" class="m-name" id="fname" name="firstName">
+            <input type="text" placeholder="Enter last name" class="m-name" id="lname" name="lastName">
+        </div>       
+        
+    </div>  
+    <div>
+        <div>
+            <label >Gender</label> 
+             
+            <label id="bd">Birthday</label>
+        </div>
+        <div class="gender_birth" >
+            <input type="radio" name="gender" value="m">Male
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" value="f">Female
+            
+            <input id="bdate" type="date" name="Bday">  
+        </div>
+
+    </div>
+    <div> 
+        <label>Email Address</label>
+    </div>
+    <div>
+        <input type="email" placeholder="Enter email" class="m-email" id="email" name="email">
+    </div>
+    <div>
+        <label>Select Your user type</label>
+    </div>
+    <div>
+        <select class="select" name="user">
+            <option> </option>
+            <option>Student</option>
+            <option>Teacher</option>
+            <option>Dean</option>
+        </select>
+    </div>
+    <div>
+       <div class="register">
+            <label>Password Name</label>         
+            <label class="ln">Confirm Password</label>
+       </div>
+       <div class="register">        
+            <input type="password" placeholder="Password" class="m-name" id="pass" name="pass">
+            <input type="password" placeholder="Confirm Password" class="m-name" id="cpass" name="Cpass">
+       </div>
+       <div id="error"></div>       
+    </div> 
+    <div>
+        <select size="6" name="lang-type" 
+        class="all-input" id="lang-type"
+        multiple="multiple"
+        style="width: 450px;">
+
+        <option value="amharic">amharic</option>
+        <option value="english">english</option>
+        <option value="oromigna">oromigna</option>
+        <option value="tigregna">tigregna</option>
+        <option value="somoligna">somoligna</option>
+        <option value="Guragegna">Guragegna</option>
+    </select>
+    </div>
+    
+    <div>
+        <label>Comment</label>
+    </div>
+     <div>
+    <textarea id="ta" cols="60" rows="6" name="Comment"></textarea>
+    </div>
+    <input type="submit" name="Register" value="Register" id="button">
+  
+</form>
+</fieldset>
+</body>
+<script src="index.js"></script>
+</html>
